@@ -14,15 +14,14 @@
   }
 
   .logo {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin: -30%;
+    position: absolute;
+    left: 0;
+    top: 0px;
   }
 
   nav {
     display: flex;
-    justify-content: space-around;
+    justify-content:stretch;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: #fff;
@@ -30,7 +29,7 @@
   }
 
   main {
-    background: url("bg.jpg") no-repeat center center;
+    background: url("assets/imagens/fundo-site.jpg") no-repeat center center;
     background-size: cover;
     height: 92vh;
   }
@@ -38,16 +37,22 @@
   .nav-list {
     list-style: none;
     display: flex;
+    overflow-x: hidden;
   }
 
   .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
+    overflow-x: hidden;
   }
 
   .mobile-menu {
     display: none;
     cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    overflow-x: hidden;
   }
 
   .mobile-menu div {
@@ -56,6 +61,7 @@
     background: black;
     margin: 8px;
     transition: 0.3s;
+    overflow-x: hidden;
   }
 
   @media (max-width: 999px) {
